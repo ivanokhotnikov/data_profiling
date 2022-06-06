@@ -27,7 +27,7 @@ steps:
         "--platform",
         "managed",
         "--port", 
-        "8080"
+        "8082"
       ]
 images:
   - gcr.io/test-rig-349313/data-profiling
