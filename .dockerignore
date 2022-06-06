@@ -1,0 +1,16 @@
+**/__pycache__
+**/.classpath
+**/.dockerignore
+**/.devcontainer
+**/.gcloudignore
+**/.venv
+**/venv
+**/.git
+**/.gitignore
+**/.project
+**/.settings
+**/.toolstarget
+**/.vs
+**/.vscode
+**/Dockerfile*
+README.md
