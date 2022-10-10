@@ -19,7 +19,7 @@ FORECAST_FEATURES = [f.strip().replace(' ', '_') for f in FORECAST_FEATURES]
 
 st.set_page_config(
     page_title='Test data profile',
-    page_icon=os.path.join(os.path.dirname(__file__), 'images', 'fav.png'),
+    page_icon='fav.png',
     layout='wide',
 )
 
