@@ -19,8 +19,8 @@ FORECAST_FEATURES = [f.strip().replace(' ', '_') for f in FORECAST_FEATURES]
 
 st.set_page_config(
     page_title='Test data profile',
-    page_icon='fav.png',
-    layout='wide',
+    page_icon='https://github.com/ivanokhotnikov/test_rig/blob/master/images/fav.png?raw=True',
+    layout='centered',
 )
 
 
