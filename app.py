@@ -1,5 +1,4 @@
 import io
-import os
 
 import pandas as pd
 import streamlit as st
@@ -28,8 +27,8 @@ def main():
     st.title('Test data profile')
     is_minimal = st.checkbox('Minimal', False)
     storage_client = client.Client()
-    bucket = storage_client.get_bucket('test_rig_data')
-    blob = bucket.get_blob('processed/processed_data.csv')
+    bucket = storage_client.get_bucket('test_rig_processed_data')
+    blob = bucket.get_blob('/processed_data.csv')
     data_bytes = blob.download_as_bytes()
     df = pd.read_csv(io.BytesIO(data_bytes))
     forecast_df = df[FORECAST_FEATURES].apply(pd.to_numeric,
